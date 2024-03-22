@@ -1,6 +1,8 @@
 import { TaskValidationError } from "../errors";
 import { Task } from "./Task";
 import { TaskPayload } from "./TaskPayload";
+import { TaskPayloadAuthorization } from "./TaskPayloadAuthorization";
+import { TaskPayloadMeta } from "./TaskPayloadMeta";
 
 /**
  * A class responsible for creating and managing tasks, with options for configuring task properties.
