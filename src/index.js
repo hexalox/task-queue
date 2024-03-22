@@ -16,6 +16,7 @@ import { APIKeyAuthorization } from './authorization/APIKeyAuthorization';
 import { AWSSignatureAuthorization } from './authorization/AWSSignatureAuthorization';
 import { BearerTokenAuthorization } from './authorization/BearerTokenAuthorization';
 import { ClientCredentialsAuthorization } from './authorization/ClientCredentialsAuthorization';
+import { TaskPayloadAuthorization } from './task/TaskPayloadAuthorization';
 
 // export * from './schema/mongo'
 // export * from './task/Task';
@@ -38,9 +39,16 @@ import { ClientCredentialsAuthorization } from './authorization/ClientCredential
 // export * from './authorization/ClientCredentialsAuthorization';
 
 
-
 export {
-    MongoTaskSchema, Task, TaskPayload, TaskCreator, TaskAuthorizationMethod, TaskWorker, TaskPayloadMeta, TASK_STATUS, TaskMessage,
+    MongoTaskSchema, Task, 
+    TaskPayload, 
+    TaskCreator, 
+    TaskAuthorizationMethod, 
+    TaskWorker, 
+    TaskPayloadMeta, 
+    TASK_STATUS, 
+    TaskMessage,
+    TaskPayloadAuthorization,
     TaskWarningMessage,
     TaskErrorMessage,
     TaskDBRef,
