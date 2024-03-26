@@ -10,13 +10,14 @@ import { TaskMessage } from './message/TaskMessage';
 import { TaskWarningMessage } from './message/TaskWarningMessage';
 import { TaskErrorMessage } from './message/TaskErrorMessage';
 import { TaskBulkDBRef, TaskBulkMongoDBRef, TaskDBRef, TaskMongoDBRef, TaskMongooseRef } from './references/TaskDBRef';
-import { TaskRemoteStorageRef, TaskS3StorageRef } from './references/TaskStorageRef';
+import { TaskLocalStorageRef, TaskRemoteStorageRef, TaskS3StorageRef, TaskStorageRef } from './references/TaskStorageRef';
 import { BadRequestError, TaskValidationAuthError, TaskValidationError } from './errors';
 import { APIKeyAuthorization } from './authorization/APIKeyAuthorization';
 import { AWSSignatureAuthorization } from './authorization/AWSSignatureAuthorization';
 import { BearerTokenAuthorization } from './authorization/BearerTokenAuthorization';
 import { ClientCredentialsAuthorization } from './authorization/ClientCredentialsAuthorization';
 import { TaskPayloadAuthorization } from './task/TaskPayloadAuthorization';
+
 
 
 export {
@@ -33,6 +34,8 @@ export {
     TaskWarningMessage,
     TaskErrorMessage,
     TaskDBRef,
+    TaskStorageRef,
+    TaskLocalStorageRef,
     TaskS3StorageRef,
     TaskMongoDBRef,
     TaskBulkDBRef,
