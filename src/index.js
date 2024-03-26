@@ -18,29 +18,10 @@ import { BearerTokenAuthorization } from './authorization/BearerTokenAuthorizati
 import { ClientCredentialsAuthorization } from './authorization/ClientCredentialsAuthorization';
 import { TaskPayloadAuthorization } from './task/TaskPayloadAuthorization';
 
-// export * from './schema/mongo'
-// export * from './task/Task';
-// export * from './task/TaskPayload';
-// export * from './task/TaskCreator';
-// export * from './task/TaskAuthorizationMethod';
-// export * from './task/TaskWorker';
-// export * from './task/TaskPayloadMeta';
-// export * from './task/TaskPayloadAuthorization';
-// export * from './task/constants';
-// export * from './message/TaskMessage';
-// export * from './message/TaskWarningMessage';
-// export * from './message/TaskErrorMessage';
-// export * from './references/TaskDBRef';
-// export * from './references/TaskStorageRef';
-// export * from './errors';
-// export * from './authorization/APIKeyAuthorization';
-// export * from './authorization/AWSSignatureAuthorization';
-// export * from './authorization/BearerTokenAuthorization';
-// export * from './authorization/ClientCredentialsAuthorization';
-
 
 export {
-    MongoTaskSchema, Task, 
+    MongoTaskSchema, 
+    Task, 
     TaskPayload, 
     TaskCreator, 
     TaskAuthorizationMethod, 
