@@ -32,6 +32,12 @@ export class ClientCredentialsAuthorization extends TaskAuthorizationMethod {
             this.credentials = {};
             this.credentials['client_id'] = this.authorization?.client_id;
         }
+        if (!this.authorization?.scope) {
+            this.credentials['scope'] = this.authorization.scope;
+        }
+        if (!this.authorization?.additional_parameters) {
+            this.credentials['additional_parameters'] = this.authorization.additional_parameters;
+        }
         if (!this.authorization?.token_endpoint) {
             throw new TaskValidationAuthError(`Token Endpoint Missing: The required Token Endpoint is not provided. Please include the Token Endpoint to authenticate and proceed with the operation.`);
         } else {
