@@ -41,10 +41,16 @@ export class TaskPayload {
         this.meta = {};
 
         /**
+         * Subscription related information for the task.
+         * @type {Object}
+         */
+        this.subscription = {};
+
+        /**
          * The version number of the payload.
          * @type {number}
          */
-        this.version = 2;
+        this.version = 3;
 
         return this;
     }
@@ -113,6 +119,20 @@ export class TaskPayload {
     setMeta(meta) {
         if (meta) {
             this.meta = meta;
+        }
+        return this;
+    }
+
+    
+    /**
+     * Sets subscription-related information for the task.
+     *
+     * @param {Object} subscription - Subscription related information for the task.
+     * @returns {TaskPayload} The updated TaskPayload instance.
+     */
+    setSubscription(subscription) {
+        if (subscription) {
+            this.subscription = subscription;
         }
         return this;
     }
