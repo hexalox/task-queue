@@ -1,6 +1,6 @@
 {
   "name": "@task-master/task-queue",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Provides solutions for task queue systems",
   "main": "dist/index.js",
   "scripts": {
